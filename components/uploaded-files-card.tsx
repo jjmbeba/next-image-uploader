@@ -1,17 +1,9 @@
 import Image from "next/image"
-import type { UploadedFile } from "@/types"
+import type {UploadedFile} from "@/types"
 
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
-import { EmptyCard } from "@/components/emprt-card"
-import {Button} from "@/components/ui/button";
-import {FileIcon, Files} from "lucide-react";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle,} from "@/components/ui/card"
+import {ScrollArea, ScrollBar} from "@/components/ui/scroll-area"
+import {EmptyCard} from "@/components/emprt-card"
 import CopyButton from "@/components/CopyButton";
 
 interface UploadedFilesCardProps {

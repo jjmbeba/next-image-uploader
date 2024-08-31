@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import {UploadZone} from "@/components/UploadZone";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"

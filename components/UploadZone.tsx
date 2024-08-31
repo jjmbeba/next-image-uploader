@@ -1,28 +1,18 @@
 "use client"
 
 import * as React from "react"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { toast } from "sonner"
-import { z } from "zod"
+import {zodResolver} from "@hookform/resolvers/zod"
+import {useForm} from "react-hook-form"
+import {toast} from "sonner"
+import {z} from "zod"
 
-import { getErrorMessage } from "@/lib/handle-error"
-import { useUploadFile } from "@/hooks/use-upload-file"
-import { Button } from "@/components/ui/button"
-import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "@/components/ui/form"
-import { FileUploader } from "@/components/file-uploader"
-
-import { UploadedFilesCard } from "./uploaded-files-card"
+import {getErrorMessage} from "@/lib/handle-error"
+import {useUploadFile} from "@/hooks/use-upload-file"
+import {Button} from "@/components/ui/button"
+import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form"
+import {FileUploader} from "@/components/file-uploader"
 import {useQuery} from "convex/react";
 import {api} from "@/convex/_generated/api";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const schema = z.object({
     images: z.array(z.instanceof(File)),
